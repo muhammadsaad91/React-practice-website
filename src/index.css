@@ -71,6 +71,7 @@ li{
 }
 
 .main-left{
+  margin-top: 5rem;
   width: 50%;
   height: 100%;
   /* border: 2px solid red; */
@@ -92,6 +93,7 @@ li{
   /* border: 2px solid red; */
 }
 .main-right{
+  margin-top: 5rem;
   width: 50%;
   height: 100%;
   /* border: 2px solid red; */
