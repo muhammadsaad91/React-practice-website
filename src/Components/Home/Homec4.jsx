@@ -1,6 +1,11 @@
 import React from "react";
+import { useState } from "react";
 
 const Homec4 = () => {
+    const [count, setCount] = useState(false);
+    const [count1, setCount1] = useState(false);
+    const [count2, setCount2] = useState(false);
+    const [count3, setCount3] = useState(false);
     return (
         <>
             <div className="home-c4">
@@ -9,10 +14,36 @@ const Homec4 = () => {
                         <h1>Manage social media in one place</h1>
                     </div>
                     <div className="home-c4leftcontent">
-                        <h3>➡ Light up your profiles</h3>
-                        <h3>➡ Plan your content with ease</h3>
-                        <h3>➡ Stay on top of trends</h3>
-                        <h3>➡ Post on time, every time</h3>
+                        <h3 style={count? {color:"red"}:{color:"#004963"}} onClick={() => { setCount(!count) ; setCount1(false);setCount2(false) ; setCount3(false)  }} ><span >{count ? "⬇" : "➡"}</span> Light up your profiles</h3>
+
+                        {count?                        <div className="kdhwknwkjnv">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Donec euismod, nisi vel consectetur interdum, nisl nisi
+                            </p>
+                        </div>:null}
+
+                        <h3 style={count1? {color:"red"}:{color:"#004963"}} onClick={() => { setCount1(!count1) ; setCount(false);setCount2(false) ; setCount3(false) }}   ><span >{count1 ? "⬇" : "➡"}</span> Plan your content with ease</h3>
+                        {count1?                        <div className="kdhwknwkjnv">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Donec euismod, nisi vel consectetur interdum, nisl nisi
+                            </p>
+                        </div>:null}
+                        <h3 style={count2? {color:"red"}:{color:"#004963"}} onClick={() => { setCount2(!count2) ; setCount1(false);setCount(false) ; setCount3(false) }}><span  >{count2 ? "⬇" : "➡"}</span> Stay on top of trends</h3>
+                        {count2?                        <div className="kdhwknwkjnv">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Donec euismod, nisi vel consectetur interdum, nisl nisi
+                            </p>
+                        </div>:null}
+                        <h3 style={count3? {color:"red"}:{color:"#004963"}} onClick={() => { setCount3(!count3) ; setCount1(false);setCount2(false) ; setCount(false) }}><span  >{count3 ? "⬇" : "➡"}</span> Post on time, every time</h3>
+                        {count3?                        <div className="kdhwknwkjnv">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Donec euismod, nisi vel consectetur interdum, nisl nisi
+                            </p>
+                        </div>:null}
                     </div>
                     <button>Explore All The features</button>
                     {/* <p>Schedule and publish content to all of your social profiles, track effectiveness in real time, and crank the volume on your top-performing content.</p> */}

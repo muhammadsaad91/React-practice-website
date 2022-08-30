@@ -1,11 +1,18 @@
 import React from "react";
+import imsvg from "./1.svg";
 
 const Navbar = () => {
+  const styles = {
+    backgroundColor: "#DFFFDE",
+    // height: "50px",
+    width: "100%",
+    position: "fixed",
+  }
     return (
         <>
-          <nav className="navbar navbar-expand-lg navbar-light navbars " >
+          <nav className="navbar navbars navbar-expand-lg navbar-light " style={styles}>
             
-        <a className="navbar-brand" href="#"><h2>Hootsuite</h2></a>
+          <a href="#"> <img src={imsvg} alt="svg" width="200px" /></a>
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>
