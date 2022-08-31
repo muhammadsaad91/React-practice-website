@@ -5,6 +5,11 @@ const App = () => {
   const [count, setCount] = useState(false);
   const [count1, setCount1] = useState(false);
   const [count2, setCount2] = useState(false);
+  const styleh3 = {
+    position: "relative",
+    left: "2rem",
+  };
+  
   return (
     <>
       <div className="homec6">
@@ -53,9 +58,9 @@ const App = () => {
 
             <div className="c6under">
               <div className="divflex">
-                <div className="div" style={count? {backgroundColor:"#001b07"}:{backgroundColor:"#004963"}} onClick={() => { setCount(true); setCount1(false); setCount2(true) }}><h2>1</h2><div className="red" style={count ? {display:"inline"} : {display:"none"}}></div></div>
-                <div className="div" style={count1? {backgroundColor:"#001b07"}:{backgroundColor:"#004963"}} onClick={() => { setCount1(true); setCount(false); setCount2(true) }}><h2>2</h2><div className="red" style={count1 ? {display:"inline"} : {display:"none"}}></div></div>
-                <div className="div" style={count2? {backgroundColor:"#004963"}:{backgroundColor:"#001b07"}} onClick={() => { setCount2(false); setCount1(false); setCount(false) }}><h2>3</h2><div className="red" style={count2 ? {display:"none"}:{display:"inline"}}></div></div>
+                <div className="div" style={count? {backgroundColor:"#001b07"}:{backgroundColor:"#004963"}} onClick={() => { setCount(true); setCount1(false); setCount2(true) }}><h2 style={count ? styleh3 : null }>1</h2><div className="red" style={count ? {display:"inline"} : {display:"none"}}></div></div>
+                <div className="div" style={count1? {backgroundColor:"#001b07"}:{backgroundColor:"#004963"}} onClick={() => { setCount1(true); setCount(false); setCount2(true) }}><h2 style={count1 ? styleh3 : null }>2</h2><div className="red" style={count1 ? {display:"inline"} : {display:"none"}}></div></div>
+                <div className="div" style={count2? {backgroundColor:"#004963"}:{backgroundColor:"#001b07"}} onClick={() => { setCount2(false); setCount1(false); setCount(false) }}><h2 style={!count2 ? styleh3 : null }>3</h2><div className="red" style={count2 ? {display:"none"}:{display:"inline"}}></div></div>
               </div>
               <div className="c6para">
                 {count ?
