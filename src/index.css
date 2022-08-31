@@ -448,10 +448,6 @@ padding: 4rem;
 /* footer code  */
 
 
-footer{
-	/* position: fixed; */
-	/* bottom: 0; */
-}
 
 @media (max-height:800px){
 	footer { position: static; }
@@ -804,11 +800,6 @@ footer{
 }
 .homec6{
   width: 100%;
-  /* border: 2px solid red; */
-  /* display: flex; */
-  /* padding-right: 1rem; */
-  /* flex-direction: column; */
-  /* height: auto; */
 }
 .desktop{
   display: none;
@@ -871,24 +862,25 @@ display: flex;
   height: 50%;
 
 }
-/* .div h2{
-  position: relative;
-  left: 2rem;
-} */
+
 .red{
   position: relative;
   top: 35%;
   left: -0.5rem;
-  /* left: 2rem; */
-
-  /* right: 1.6rem; */
-  /* z-index: -2; */
    transform: rotate(45deg);
   width: 50px;
   height: 40px;
   background-color: #001b07;
   z-index: -1;
-  /* border: 2px solid red; */
 }
 
+.navleft{
+  margin-left: 1rem;
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-start;
+}
 }
