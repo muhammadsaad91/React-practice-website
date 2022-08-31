@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/React-practice-website/static/css/main.5ba77806.css",
-    "main.js": "/React-practice-website/static/js/main.b98c7472.js",
+    "main.js": "/React-practice-website/static/js/main.97078c10.js",
     "static/media/img1.png": "/React-practice-website/static/media/img1.7f83202748794511c58b.png",
     "static/media/1.svg": "/React-practice-website/static/media/1.22157041a02ac5e2a6af672ac034e43a.svg",
     "index.html": "/React-practice-website/index.html",
     "main.5ba77806.css.map": "/React-practice-website/static/css/main.5ba77806.css.map",
-    "main.b98c7472.js.map": "/React-practice-website/static/js/main.b98c7472.js.map"
+    "main.97078c10.js.map": "/React-practice-website/static/js/main.97078c10.js.map"
   },
   "entrypoints": [
     "static/css/main.5ba77806.css",
-    "static/js/main.b98c7472.js"
+    "static/js/main.97078c10.js"
   ]
 }
