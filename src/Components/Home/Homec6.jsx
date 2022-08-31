@@ -7,7 +7,7 @@ const App = () => {
   const [count2, setCount2] = useState(false);
   const styleh3 = {
     position: "relative",
-    left: "2rem",
+    left: "1.7rem",
   };
   
   return (
