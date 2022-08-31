@@ -4,9 +4,15 @@ import imsvg from "./1.svg";
 const Navbar = () => {
   const styles = {
     backgroundColor: "#DFFFDE",
-    // height: "50px",
     width: "100%",
     position: "fixed",
+  }
+  const styleli = {
+    // border: "1px solid black",
+   display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    width: "130px",
   }
     return (
         <>
@@ -18,16 +24,16 @@ const Navbar = () => {
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
-            <li className="nav-item active">
+            <li className="nav-item active" style={styleli}>
               <a className="nav-link" href="#">Why Ho0tsuite <span className="sr-only">(current)</span></a>
             </li>
-            <li className="nav-item">
+            <li className="nav-item" style={styleli}>
               <a className="nav-link" href="#">What we do</a>
             </li>
-            <li className="nav-item">
+            <li className="nav-item" style={styleli}>
               <a className="nav-link" href="#">Pricing</a>
             </li>
-            <li className="nav-item">
+            <li className="nav-item" style={styleli}>
               <a className="nav-link" href="#">Resources</a>
             </li>
           </ul>
