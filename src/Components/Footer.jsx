@@ -45,7 +45,7 @@ const App = () => {
 					<span>About the company</span>
 					We offer training and skill building courses across Technology, Design, Management, Science and Humanities.</p>
 				<div className="footer-icons">
-					<a href="#"><i class="fa-brands fa-facebook"></i></a>
+					<a href="#"><i className="fa-brands fa-facebook"></i></a>
 					<a href="#"><i className="fa-brands fa-twitter"></i></a>
 					<a href="#"><i className="fa-brands fa-instagram"></i></a>
 					<a href="#"><i className="fa-brands fa-linkedin"></i></a>

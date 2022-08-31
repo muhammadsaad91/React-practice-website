@@ -6,6 +6,14 @@ const Homec4 = () => {
     const [count1, setCount1] = useState(false);
     const [count2, setCount2] = useState(false);
     const [count3, setCount3] = useState(false);
+    const stylei = {
+        transform:"rotate(90deg)",
+        transition:"all 0.5s ease-in-out"
+    }
+    const stylep = {
+        transform:"rotate(360deg)",
+        transition:"all 1s ease-in-out"
+    }
     return (
         <>
             <div className="home-c4">
@@ -13,8 +21,8 @@ const Homec4 = () => {
                     <div className="topc4">
                         <h1>Manage social media in one place</h1>
                     </div>
-                    <div className="home-c4leftcontent">
-                        <h3 style={count? {color:"red"}:{color:"#004963"}} onClick={() => { setCount(!count) ; setCount1(false);setCount2(false) ; setCount3(false)  }} ><span >{count ? "⬇" : "➡"}</span> Light up your profiles</h3>
+                    <div className="home-c4leftcontent" style={stylep}>
+                        <h3 style={count? {color:"red"}:{color:"#004963"}} onClick={() => { setCount(!count) ; setCount1(false);setCount2(false) ; setCount3(false)  }} ><i style={count? stylei : {transform:"rotate(360deg)"}} className="fa-solid fa-arrow-right"></i> Light up your profiles</h3>
 
                         {count?                        <div className="kdhwknwkjnv">
                             <p>
@@ -23,23 +31,23 @@ const Homec4 = () => {
                             </p>
                         </div>:null}
 
-                        <h3 style={count1? {color:"red"}:{color:"#004963"}} onClick={() => { setCount1(!count1) ; setCount(false);setCount2(false) ; setCount3(false) }}   ><span >{count1 ? "⬇" : "➡"}</span> Plan your content with ease</h3>
+                        <h3 style={count1? {color:"red"}:{color:"#004963"}} onClick={() => { setCount1(!count1) ; setCount(false);setCount2(false) ; setCount3(false) }}   ><i style={count1? stylei : {transform:"rotate(360deg)"}} className="fa-solid fa-arrow-right"></i> Plan your content with ease</h3>
                         {count1?                        <div className="kdhwknwkjnv">
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                 Donec euismod, nisi vel consectetur interdum, nisl nisi
                             </p>
                         </div>:null}
-                        <h3 style={count2? {color:"red"}:{color:"#004963"}} onClick={() => { setCount2(!count2) ; setCount1(false);setCount(false) ; setCount3(false) }}><span  >{count2 ? "⬇" : "➡"}</span> Stay on top of trends</h3>
+                        <h3 style={count2? {color:"red"}:{color:"#004963"}} onClick={() => { setCount2(!count2) ; setCount1(false);setCount(false) ; setCount3(false) }}><i style={count2? stylei : {transform:"rotate(360deg)"}} className="fa-solid fa-arrow-right"></i> Stay on top of trends</h3>
                         {count2?                        <div className="kdhwknwkjnv">
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                 Donec euismod, nisi vel consectetur interdum, nisl nisi
                             </p>
                         </div>:null}
-                        <h3 style={count3? {color:"red"}:{color:"#004963"}} onClick={() => { setCount3(!count3) ; setCount1(false);setCount2(false) ; setCount(false) }}><span  >{count3 ? "⬇" : "➡"}</span> Post on time, every time</h3>
-                        {count3?                        <div className="kdhwknwkjnv">
-                            <p>
+                        <h3 style={count3? {color:"red"}:{color:"#004963"}} onClick={() => { setCount3(!count3) ; setCount1(false);setCount2(false) ; setCount(false) }}><i style={count3? stylei : {transform:"rotate(360deg)"}} className="fa-solid fa-arrow-right"></i> Post on time, every time</h3>
+                        {count3?                        <div className="kdhwknwkjnv" style={stylep}>
+                            <p >
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                 Donec euismod, nisi vel consectetur interdum, nisl nisi
                             </p>
